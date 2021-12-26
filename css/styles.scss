@@ -1,0 +1,47 @@
+$color-white: #fff;
+$color-alt-white: #efe8fb;
+$color-main: #4964e7;
+$color-text: #29303d;
+$color-text2: #47536B;
+$color-highlight-text: #8563ff;
+$color-highlight-text2: #00bcd7;
+$color-highlight-text3: #c966ee;
+$color-button-grad-begin: #e36fc9;
+$color-button-grad-end: #7664ff;
+$color-button-grad-begin2: rgb(253,183,86) 0%;
+$color-button-grad-end2: rgb(245,121,112) 100%;
+$color-box: #00cabe;
+$color-check-bullets: #28b54f;
+$color-image-background: #e4e8fb;
+$modal-button-color: #919899;
+
+$font: "Cabin", "Helvetica Neue", helvetica, arial, sans-serif;
+
+
+
+html {
+    font-family: $font;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: $color-text;
+    
+}
+
+body {
+    margin: 0;
+    text-align: left;
+    
+}
+
+.site-footer {
+    margin-top: 3rem;
+    padding: 50px 0;
+    background-color: $color-main;
+    color: $color-white;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
