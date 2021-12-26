@@ -22,12 +22,22 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col" id="videoHeader">
-                    <a id="videoAnchor" role="button">Watch to see how you can game your life changes <i class="fa fa-play"></i></a>
+                    <a id="videobutton" role="button">Watch to see how you can game your life changes <i class="fa fa-play"></i></a>
                 </div>
             </div>
 
-            <div id="videoModal" class="modal" role="dialog" role="video">
-
+            <div id="videoModal" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">I don't have video yet, so watch this funny cat video instead 🤣</h4>
+                            <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"></i></button>
+                        </div>
+                        <div class="modal-body m-auto">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/SuFRxDvvGpM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                         </div>
+                    </div>
+                </div>
             </div>
 
             <nav class="navbar navbar-expand-sm sticky-top">
@@ -55,7 +65,7 @@
                             <a class="btn btn-lg navbar-btn" id="loginbutton" role="button">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-lg navbar-btn text-nowrap" id="fadebutton" role="button" href="download.html">Download the App</a>
+                            <a class="btn btn-lg navbar-btn text-nowrap" id="downloadbutton" role="button" href="download.html">Download the App</a>
                         </li>
                     </ul>
                 </div>
@@ -70,20 +80,22 @@
                     <h4 class="modal-title">Welcome to Habit Changer 👋</h4>
                     <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"></i></button>
                 </div>
+
                 <div class="modal-switch" id="modalSwitch">
-                    <span class="modal-switch__login disabled">Login</span>
-                    <span data-from="loginModal" data-to="registerModal" class="modal-switch__login modal__switch-modal">Register</span>
+                    <span id="loginSwitch" class="modal-switch__login disabled">Login</span>
+                    <span id="registerSwitch" class="modal-switch__login">Register</span>
                 </div>
+
                 <div class="modal-body">
                     <div class="container-fluid">
                         <form>
                             <div class="form-row">
                                 <div class="form-group col-12">
-                                    <label class= for="#loginEmail">Email<sup>*</sup></label>
+                                    <label for="#loginEmail">Email<sup>*</sup></label>
                                     <input type="email" class="form-control form-control-lg" id="loginEmail" placeholder="name@somedomain.com">
                                 </div>
                                 <div class="form-group col-12">
-                                    <label class= for="#loginPassword">Password<sup>*</sup></label>
+                                    <label for="#loginPassword">Password<sup>*</sup></label>
                                     <input type="password" class="form-control form-control-lg" id="loginPassword" placeholder="Enter password">
                                 </div>
                             </div>
@@ -94,6 +106,45 @@
                     </div>
                     <div class="modal-footer">
                         <strong>Forgot Password? <a id="recoverpasswordLink" class="link--recover-password" href="#"><u>Recover</u></a></strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="registerModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Welcome to Habit Changer 👋</h4>
+                    <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"></i></button>
+                </div>
+
+                <div class="modal-switch" id="modalSwitch">
+                    <span id="loginSwitch" class="modal-switch__register">Login</span>
+                    <span id="registerSwitch" class="modal-switch__register disabled">Register</span>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="#loginEmail">Email<sup>*</sup></label>
+                                    <input type="email" class="form-control form-control-lg" id="loginEmail" placeholder="name@somedomain.com">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label for="#loginPassword">Password<sup>*</sup></label>
+                                    <input type="password" class="form-control form-control-lg" id="loginPassword" placeholder="Enter password">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button id="submitbutton" type="submit" class="btn btn-lg btn-block">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        
                     </div>
                 </div>
             </div>
@@ -139,6 +190,8 @@
                         <div class="col-6 col-md-4 col-lg-3">
                             <h4>Placeholder</h4>
                             <ul>
+                                <li>Random Info</li>
+                                <li>Random Info</li>
                                 <li>Random Info</li>
                                 <li>Random Info</li>
                                 <li>Random Info</li>
