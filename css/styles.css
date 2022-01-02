@@ -63,6 +63,11 @@ h4 {
     color: white;
 }
 
+.btn-down {
+    background-color: #4964e7;
+    color: white;
+}
+
 .modal-content {
     border-radius: 20px;
 }
