@@ -7,7 +7,6 @@
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/styles.scss" />
     <link rel="stylesheet" href="css/styles.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -41,31 +40,31 @@
             </div>
 
             <nav class="navbar navbar-expand-sm sticky-top">
-                <a class="navbar-brand" href="index.html"><h3>(Logo) Habit Changer</h1></a>
+                <a class="navbar-brand" href="index.html"><h3><i class="fa fa-gamepad fa-lg"></i> Habit Changer</h1></a>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item active dropdown">
                             <a class="nav-link dropdown-toggle" id="appFeaturesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="appFeatures.html">App Features <i class="fa fa-angle-down"></i></a>
                             <div class="dropdown-menu" aria-labelledby="appFeaturesDropdown">
-                                <a class="dropdown-item" href="#">Feature 1</a>
-                                <a class="dropdown-item" href="#">Feature 2</a>
-                                <a class="dropdown-item" href="#">Feature 3</a>
+                                <a class="dropdown-item" href="appFeatures.html">Feature 1</a>
+                                <a class="dropdown-item" href="appFeatures.html">Feature 2</a>
+                                <a class="dropdown-item" href="appFeatures.html">Feature 3</a>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="downloadDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="download.html">Download <i class="fa fa-angle-down"></i></a>
                             <div class="dropdown-menu" aria-labelledby="downloadDropdown">
-                                <a class="dropdown-item" href="download.html/#">Download for Windows</a>
-                                <a class="dropdown-item" href="download.html/#">Download for MacOS</a>
-                                <a class="dropdown-item" href="download.html/#">Download for Android</a>
-                                <a class="dropdown-item" href="download.html/#">Download for iOS</a>
+                                <a class="dropdown-item" href="download.html/">Download for Windows</a>
+                                <a class="dropdown-item" href="download.html/">Download for MacOS</a>
+                                <a class="dropdown-item" href="download.html/">Download for Android</a>
+                                <a class="dropdown-item" href="download.html/">Download for iOS</a>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="support.html">Support & Contact</a></li>
                         <li class="nav-item">
                             <a class="btn btn-lg navbar-btn" id="loginbutton" role="button">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-lg navbar-btn text-nowrap" id="downloadbutton" role="button" href="download.html">Download the App</a>
+                            <a class="btn btn-lg navbar-btn text-nowrap btn-download" id="downloadbutton" role="button" href="download.html">Download the App</a>
                         </li>
                     </ul>
                 </div>
@@ -82,7 +81,7 @@
                 </div>
 
                 <div class="modal-switch" id="modalSwitch">
-                    <span id="loginSwitch" class="modal-switch__login disabled">Login</span>
+                    <span class="modal-switch__login disabled">Login</span>
                     <span id="registerSwitch" class="modal-switch__login">Register</span>
                 </div>
 
@@ -122,7 +121,7 @@
 
                 <div class="modal-switch" id="modalSwitch">
                     <span id="loginSwitch" class="modal-switch__register">Login</span>
-                    <span id="registerSwitch" class="modal-switch__register disabled">Register</span>
+                    <span class="modal-switch__register disabled">Register</span>
                 </div>
 
                 <div class="modal-body">
@@ -151,17 +150,58 @@
         </div>
     </div>
 
-    <div>
-        Habit Changer:
-        Gaming your Life Changes
+    <div class="site-body">
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-sm-6">
+                    <h1 class="my-5">Game <span class="highlight">your change</span>.</h1>
+                    <h3 class="mb-5">Playing your way to healthier and more productive habits.</h3>
+                    <a class="btn btn-lg navbar-btn text-nowrap btn-download mb-5" role="button" href="download.html">Download the App</a>
+                </div>
+                <div class="col-sm-6 ">
+                    <img src="img/selfie-gym.png" />
+                </div>
+            </div>
+
+            <div class="row my-5">
+                <div class="col-sm-4">
+                    <card class="card">
+                        <img class="car-img-top" src="img/calendar.png" alt="" />
+                        <div class="card-body">
+                            <h5 class="card-title">Create new habits</h5>
+                            <p class="card-text">Create a game that encourages new behaviors by engaging through a fun interface.</p>
+                        </div>
+                    </card>
+                </div>
+                <div class="col-sm-4">
+                    <card class="card">
+                        <img class="car-img-top" src="img/salad.png" alt="" />
+                        <div class="card-body">
+                            <h5 class="card-title">Get healthier and more productive</h5>
+                            <p class="card-text">Make the changes that you have been wanting and trying to for years.</p>
+                        </div>
+                    </card>
+                </div>
+                <div class="col-sm-4">
+                    <card class="card">
+                        <img class="car-img-top" src="img/celebration-people.png" alt="" />
+                        <div class="card-body">
+                            <h5 class="card-title">Have fun</h5>
+                            <p class="card-text">Take selfies, score points, level up, challenge others, and turn your habit change into fun competition.</p>
+                        </div>
+                    </card>
+                </div>
+            </div>
+
+        </div>
     </div>
 
     <footer class="site-footer">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-5 col-lg-3">
-                    <div class="logo">
-                        <a href="index.html"><h4>(logo) Habit Changer</h4></a>
+                    <div class="logo  mb-4">
+                        <a href="index.html"><h4><i class="fa fa-gamepad fa-lg"></i> Habit Changer</h4></a>
                     </div>
                     <div>
                         <p>We believe that the fastest way to make a change is to turn it into a game. Follow us for more tips on how to make healthy changes in your life.</p>
@@ -178,17 +218,17 @@
                 <div class="col-sm-12 col-md-7 col-lg-9" id="footer-links">
                     <div class="row justify-content-md-end">
                         <div class="col-6 col-md-4 col-lg-3">
-                            <h4>Links</h4>
+                            <h4 class="mb-4">Links</h4>
                             <ul>
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="appFeatures.html">App Features</a></li>
                                 <li><a href="reviews.html">Reviews</a></li>
                                 <li><a href="download.html">Download Our App</a></li>
-                                <li><a href="support">Contact & Support</a></li>
+                                <li><a href="support.html">Contact & Support</a></li>
                             </ul>
                         </div>
                         <div class="col-6 col-md-4 col-lg-3">
-                            <h4>Placeholder</h4>
+                            <h4 class="mb-4">Placeholder</h4>
                             <ul>
                                 <li>Random Info</li>
                                 <li>Random Info</li>
@@ -202,14 +242,14 @@
                             
                         </div>
                         <div class="col-6 col-md-4 col-lg-3">
-                            <h4>Support</h4>
+                            <h4 class="mb-4">Support</h4>
                             <ul>
                                 <li><a href="download.html">Download Our App</a></li>
                                 <li><a href="support">Contact & Support</a></li>
                             </ul>
                         </div>
                         <div class="col-6 col-md-4 col-lg-3">
-                            <h4>Contact Us</h4>
+                            <h4 class="mb-4">Contact Us</h4>
                             <ul>
                                 <li>Tel: 1-800-CHANGER</li>
                                 <li>Email: habit@changer.com</li>
@@ -231,35 +271,6 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
-
-    <!-- Dropdown shows on hover for md and up, code from https://webdesign.tutsplus.com/tutorials/how-to-make-the-bootstrap-navbar-dropdown-work-on-hover--cms-33840-->
-    <script>
-        const $dropdown = $(".dropdown");
-        const $dropdownToggle = $(".dropdown-toggle");
-        const $dropdownMenu = $(".dropdown-menu");
-        const showClass = "show";
-        
-        $(window).on("load resize", function() {
-        if (this.matchMedia("(min-width: 768px)").matches) {
-            $dropdown.hover(
-            function() {
-                const $this = $(this);
-                $this.addClass(showClass);
-                $this.find($dropdownToggle).attr("aria-expanded", "true");
-                $this.find($dropdownMenu).addClass(showClass);
-            },
-            function() {
-                const $this = $(this);
-                $this.removeClass(showClass);
-                $this.find($dropdownToggle).attr("aria-expanded", "false");
-                $this.find($dropdownMenu).removeClass(showClass);
-            }
-            );
-        } else {
-            $dropdown.off("mouseenter mouseleave");
-        }
-        });
-    </script>
 
 </body>
 

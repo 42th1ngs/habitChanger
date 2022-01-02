@@ -1,6 +1,6 @@
 body {
     font-family: 'Cabin', sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 1.4;
     color: #29303d;
@@ -52,9 +52,14 @@ h4 {
     color: #4964e7;
 }
 
-#downloadbutton {
+.btn-download {
     background-image: linear-gradient(266.79deg, #7664ff 4.24%, #e36fc9 146.52%);
     border: linear-gradient(266.79deg, #7664ff 4.24%, #e36fc9 146.52%);
+    color: white;
+}
+
+.btn-contact {
+    background-color: #4964e7;
     color: white;
 }
 
@@ -83,7 +88,7 @@ h4 {
 .modal-footer {
     border-top: 0 none;
     color: #919099;
-    align-text: center;
+    align-items: center;
     justify-content: center;
     margin-bottom: 80px;
 }
@@ -119,6 +124,27 @@ h4 {
     background-color: transparent;
     border-radius: 40px;
     cursor: pointer;
+}
+
+.highlight {
+    color: #8563ff;
+}
+
+.fa-quote-left {
+    color: #79e0f0;
+}
+
+img {
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+
+.card {
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 0 20px #4963e720;
 }
 
 .site-footer {
